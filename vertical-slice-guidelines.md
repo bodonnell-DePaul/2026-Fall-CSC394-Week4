@@ -57,6 +57,7 @@ Your slice **must** flow through all three tiers. Verify each:
 
 - [ ] **Frontend** — A UI component or page where the user initiates the action (form, button, page)
 - [ ] **API** — At least one backend route/endpoint that handles the request with real logic
+- [ ] **MCP** - At least one MCP tool can be called to provide information
 - [ ] **Database** — At least one data model or table defined *(recommended but not required — hardcoded/mock data is acceptable)*
 - [ ] **Round trip** — Data flows from UI → API → (DB or hardcoded source) → API → UI (the user sees the result)
 
@@ -66,7 +67,7 @@ Any of these approaches are **perfectly acceptable** for the demo:
 
 | Approach | Acceptable? | Notes |
 |---|---|---|
-| Hardcoded data in the API | ✅ Yes | Fastest way to unblock the frontend |
+| Hardcoded data in the API and MCP | ✅ Yes | Fastest way to unblock the frontend |
 | Mock/seed data returned from an endpoint | ✅ Yes | Shows the API contract is defined |
 | Data read/written from your database via an ORM or query layer | ⭐ Recommended | Proves your persistence layer works end-to-end |
 
